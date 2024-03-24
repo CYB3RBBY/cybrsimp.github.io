@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOOKSMAXX WITH CYBRBBY</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+      :root {
+        --color: #f7c0cc;
+        --seccolor: #f4cdd4;
+        --myColor1: #fca6bc;
+      }
+      .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+      }
+      .container2 {
+        display: flex;
+        flex-direction: column;
+      }
+      nav {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+      }
+
+      body {
+        font-family: "Fira Sans";
+        margin: 0;
+        padding: 0;
+        background-color: var(--seccolor);
+      }
+
+      ul {
+        overflow: hidden;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: var(--seccolor);
+      }
+
+      li {
+        float: left;
+      }
+
+      li a {
+        font-weight: bold;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      li a:hover {
+        border-radius: 20px;
+        background-color: #f7c0cc;
+        font-weight: bolder;
+        color: rgb(255, 254, 254);
+      }
+      button:hover {
+        background-color: #fc9cb1;
+        cursor: pointer;
+      }
+      .search {
+        margin: 10px;
+        padding: 4px 53px 4px 16px;
+        border-radius: 18px;
+        float: right;
+        font-family: "Fira Sans";
+        font-size: 15px;
+        border: none;
+      }
+      .button1 {
+        font-family: "Fira Sans";
+        font-size: 12px;
+        border-radius: 18px;
+        border: none;
+        margin: 10px 33px 13px -5px;
+        padding: 6px;
+        float: right;
+        color: white;
+        background-color: rgb(245, 127, 176);
+      }
+      .heading {
+        text-align: center;
+        font-size: 40px;
+        color: white;
+        font-family: "Press Start 2P";
+        text-shadow: 20px 5px 18px rgb(133, 107, 120);
+        cursor: pointer;
+        padding: 34px;
+        margin: 2px;
+        animation: zoomanimation 3s ease forwards;
+      }
+      @keyframes zoomanimation {
+        0% {
+          transform: scale(1);
+        }
+        100% {
+          transform: scale(1.8);
+        }
+      }
+
+      .box {
+        width: 360px;
+        height: 598px;
+        border: 8px solid white;
+        background: radial-gradient(#8cc1d9, #ffb8e1);
+        /* background-color: var(--myColor1); */
+        padding: 46px 9px 0px 2px;
+        margin: 40px 19px 34px 70px;
+        box-shadow: 0px 1px 20px 0px #535353;
+      }
+      .boxh {
+        font-family: "Fira Sans";
+        color: white;
+        font-size: 30px;
+        font-weight: bolder;
+        text-align: center;
+        margin: 7px -25px -21px -102px;
+      }
+      .imgcards {
+        height: 260px;
+        width: 260px;
+        padding: 45px 45px 2px 49px;
+      }
+      .p {
+        color: white;
+        font-family: "Fira Sans";
+        font-size: 14px;
+        padding: 2px 25px 10px 39px;
+      }
+      .button2 {
+        font-family: "Fira Sans";
+        font-size: 12px;
+        border-radius: 18px;
+        border: none;
+        margin: -9px 124px 2px 136px;
+        padding: 12px;
+        color: white;
+        background-color: rgb(245, 127, 176);
+      }
+      .bigbox {
+        height: 2500px;
+        width: 1390px;
+        border: 8px solid white;
+        margin: 50px 50px 50px 84px;
+        background: linear-gradient(rgb(244, 167, 205), rgb(153, 198, 247));
+        box-shadow: 0px 1px 20px 0px #535353;
+      }
+      .bigbox2 {
+        height: 1120px;
+      }
+      h2 {
+        padding: 53px 5px 42px 458px;
+        color: white;
+        margin-left: -180px;
+        font-size: 40px;
+        font-family: "Press Start 2P";
+      }
+      .pb {
+        color: white;
+        font-size: 20px;
+        margin: 19px 128px 12px 97px;
+      }
+      h3 {
+        padding: 33px 27px 41px 108px;
+        color: white;
+      }
+
+      .sticky-icon {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1000;
+        opacity: 0.9;
+        transition: opacity 0.3s ease;
+      }
+
+      .sticky-icon:hover {
+        opacity: 1;
+      }
+
+      .sticky-icon img {
+        border-radius: 40px;
+        width: 80px;
+        height: 82px;
+      }
+      .imagebox {
+        height: 400px;
+        width: 400px;
+        display: grid;
+        object-fit: fill;
+      }
+
+      .imgmog {
+        border: 10px solid white;
+        object-fit: cover;
+        height: 350px;
+        width: 350px;
+      }
+
+      .imgmog2 {
+        border-top: none;
+      }
+
+      .imgcontainer {
+        display: grid;
+        margin: 170px;
+        grid-template-columns: 350px 350px 350px;
+        justify-content: space-evenly;
+        box-shadow: #535353;
+      }
+      .mogh2 {
+        color: white;
+        font-family: "Press Start 2P";
+        font-size: 55px;
+        margin-left: -378px;
+        margin-bottom: -128px;
+      }
+      footer {
+        background-color: var(--color);
+        color: white;
+        text-align: center;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <button class="button1">Search</button>
+        <div>
+          <input
+            type="text"
+            class="search"
+            name="search"
+            placeholder="Search this website"
+          />
+        </div>
+      </ul>
+    </nav>
+    <header>
+      <div class="heading">
+        <h1
+          >CYBRSIMP<svg
+            xmlns:dc="http://purl.org/dc/elements/1.1/"
+            xmlns:cc="http://creativecommons.org/ns#"
+            xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+            xmlns:svg="http://www.w3.org/2000/svg"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+            xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+            width="80"
+            height="80"
+            id="svg2"
+            version="1.1"
+            inkscape:version="0.48.4 r9939"
+            sodipodi:docname="Novo documento 1"
+          >
+            <defs id="defs4" />
+            <sodipodi:namedview
+              id="base"
+              pagecolor="#ffffff"
+              bordercolor="#666666"
+              borderopacity="1.0"
+              inkscape:pageopacity="0.0"
+              inkscape:pageshadow="2"
+              inkscape:zoom="5.3332631"
+              inkscape:cx="25.622065"
+              inkscape:cy="33.052464"
+              inkscape:document-units="px"
+              inkscape:current-layer="layer1"
+              showgrid="true"
+              borderlayer="true"
+              inkscape:showpageshadow="false"
+              inkscape:snap-bbox="true"
+              inkscape:window-width="1366"
+              inkscape:window-height="692"
+              inkscape:window-x="0"
+              inkscape:window-y="24"
+              inkscape:window-maximized="1"
+            >
+              <inkscape:grid
+                type="xygrid"
+                id="grid2985"
+                empspacing="2"
+                visible="true"
+                enabled="true"
+                snapvisiblegridlinesonly="true"
+                spacingx="6px"
+                spacingy="6px"
+                dotted="true"
+              />
+            </sodipodi:namedview>
+            <metadata id="metadata7">
+              <rdf:RDF>
+                <cc:Work rdf:about="">
+                  <dc:format>image/svg+xml</dc:format>
+                  <dc:type
+                    rdf:resource="http://purl.org/dc/dcmitype/StillImage"
+                  />
+                  <dc:title />
+                </cc:Work>
+              </rdf:RDF>
+            </metadata>
+            <g
+              inkscape:label="Camada 1"
+              inkscape:groupmode="layer"
+              id="layer1"
+              transform="translate(0,-992.36218)"
+            >
+              <rect
+                style="fill: #ffffff; fill-opacity: 1; stroke: none"
+                id="rect2987"
+                width="6"
+                height="6"
+                x="12"
+                y="1010.3622"
+              />
+              <rect
+                style="fill: #000000; fill-opacity: 1; stroke: none"
+                id="rect3950"
+                width="6"
+                height="6"
+                x="18"
+                y="998.36218"
+              />
+              <rect
+                style="fill: #000000; fill-opacity: 1; stroke: none"
+                id="rect3950-2"
+                width="6"
+                height="6"
+                x="12"
+                y="998.36218"
+              />
+              <rect
+                style="fill: #000000; fill-opacity: 1; stroke: none"
+                id="rect3950-6"
+                width="6"
+                height="6"
+                x="24"
+                y="1004.3622"
+              />
+              <rect
+                style="fill: #000000; fill-opacity: 1; stroke: none"
+                id="rect3950-0"
+                width="6"
+                height="6"
+                x="30"
+                y="1004.3622"
+              />
+              <rect
+                style="fill: #000000; fill-opacity: 1; stroke: none"
+                id="rect3950-23"
+                width="6"
+                height="6"
+                x="36"
+                y="998.36218"
+              />
+              <rect
+                style="fill: #000000; fill-opacity: 1; stroke: none"
+                id="rect3950-7"
+                width="6"
+                height="6"
+                x="42"
+                y="998.36218"
+              />
+              <rect
+                style="fill: #000000; fill-opacity: 1; stroke: none"
+                id="rect3950-07"
+                width="6"
+                height="6"
+                x="48"
+                y="998.36218"
+              />
+              <rect
+                style="fill: #000000; fill-opacity: 1; stroke: none"
+                id="rect3950-62"
+                width="6"
+                height="6"
+                x="54"
+                y="1004.3622"
+              />
+              <rect
+                style="fill: #000000; fill-opacity: 1; stroke: none"
+                id="rect3950-5"
+                width="6"
+                height="6"
+                x="54"
+                y="1010.3622"
+              />
+              <rect
+                style="fill: #000000; fill-opacity: 1; stroke: none"
+                id="rect3950-9"
+                width="6"
+                height="6"
+                x="6"
+                y="998.36218"
+              />
+              <rect
+                style="fill: #000000; fill-opacity: 1; stroke: none"
+                id="rect3950-57"
+                width="6"
+                height="6"
+                x="1.7763568e-15"
+                y="1004.3622"
+              />
+              <rect
+                style="fill: #000000; fill-opacity: 1; stroke: none"
+                id="rect3950-1"
+                width="6"
+                height="6"
+                x="1.7763568e-15"
+                y="1010.3622"
+              />
+              <rect
+                style="fill: #000000; fill-opacity: 1; stroke: none"
+                id="rect3950-28"
+                width="6"
+                height="6"
+                x="1.7763568e-15"
+                y="1016.3622"
+              />
+              <rect
+                style="fill: #000000; fill-opacity: 1; stroke: none"
+                id="rect3950-72"
+                width="6"
+                height="6"
+                x="54"
+                y="1016.3622"
+              />
+              <rect
+                style="fill: #000000; fill-opacity: 1; stroke: none"
+                id="rect3950-66"
+                width="6"
+                height="6"
+                x="6"
+                y="1022.3622"
+              />
+              <rect
+                style="fill: #000000; fill-opacity: 1; stroke: none"
+                id="rect3950-00"
+                width="6"
+                height="6"
+                x="12"
+                y="1028.3622"
+              />
+              <rect
+                style="fill: #000000; fill-opacity: 1; stroke: none"
+                id="rect3950-3"
+                width="6"
+                height="6"
+                x="18"
+                y="1034.3622"
+              />
+              <rect
+                style="fill: #000000; fill-opacity: 1; stroke: none"
+                id="rect3950-99"
+                width="6"
+                height="6"
+                x="24"
+                y="1040.3622"
+              />
+              <rect
+                style="fill: #000000; fill-opacity: 1; stroke: none"
+                id="rect3950-10"
+                width="6"
+                height="6"
+                x="30"
+                y="1040.3622"
+              />
+              <rect
+                style="fill: #000000; fill-opacity: 1; stroke: none"
+                id="rect3950-38"
+                width="6"
+                height="6"
+                x="36"
+                y="1034.3622"
+              />
+              <rect
+                style="fill: #000000; fill-opacity: 1; stroke: none"
+                id="rect3950-8"
+                width="6"
+                height="6"
+                x="42"
+                y="1028.3622"
+              />
+              <rect
+                style="fill: #000000; fill-opacity: 1; stroke: none"
+                id="rect3950-74"
+                width="6"
+                height="6"
+                x="48"
+                y="1022.3622"
+              />
+              <rect
+                style="fill: #9d0000; fill-opacity: 1; stroke: none"
+                id="rect3950-89"
+                width="6"
+                height="6"
+                x="6"
+                y="1004.3622"
+              />
+              <rect
+                style="fill: #ff0000; fill-opacity: 1; stroke: none"
+                id="rect3950-89-7"
+                width="6"
+                height="6"
+                x="12"
+                y="1004.3622"
+              />
+              <rect
+                style="fill: #ff0000; fill-opacity: 1; stroke: none"
+                id="rect3950-89-8"
+                width="6"
+                height="6"
+                x="18"
+                y="1004.3622"
+              />
+              <rect
+                style="fill: #9d0000; fill-opacity: 1; stroke: none"
+                id="rect3950-89-1"
+                width="6"
+                height="6"
+                x="6"
+                y="1010.3622"
+              />
+              <rect
+                style="fill: #ff0000; fill-opacity: 1; stroke: none"
+                id="rect3950-89-76"
+                width="6"
+                height="6"
+                x="12"
+                y="1010.3622"
+              />
+              <rect
+                style="fill: #ff0000; fill-opacity: 1; stroke: none"
+                id="rect3950-89-4"
+                width="6"
+                height="6"
+                x="18"
+                y="1010.3622"
+              />
+              <rect
+                style="fill: #9d0000; fill-opacity: 1; stroke: none"
+                id="rect3950-89-2"
+                width="6"
+                height="6"
+                x="6"
+                y="1016.3622"
+              />
+              <rect
+                style="fill: #ff0000; fill-opacity: 1; stroke: none"
+                id="rect3950-89-79"
+                width="6"
+                height="6"
+                x="12"
+                y="1016.3622"
+              />
+              <rect
+                style="fill: #ff0000; fill-opacity: 1; stroke: none"
+                id="rect3950-89-18"
+                width="6"
+                height="6"
+                x="18"
+                y="1016.3622"
+              />
+              <rect
+                style="fill: #9d0000; fill-opacity: 1; stroke: none"
+                id="rect3950-89-3"
+                width="6"
+                height="6"
+                x="12"
+                y="1022.3622"
+              />
+              <rect
+                style="fill: #ff0000; fill-opacity: 1; stroke: none"
+                id="rect3950-89-0"
+                width="6"
+                height="6"
+                x="18"
+                y="1022.3622"
+              />
+              <rect
+                style="fill: #9d0000; fill-opacity: 1; stroke: none"
+                id="rect3950-89-5"
+                width="6"
+                height="6"
+                x="18"
+                y="1028.3622"
+              />
+              <rect
+                style="fill: #ff0000; fill-opacity: 1; stroke: none"
+                id="rect3950-89-58"
+                width="6"
+                height="6"
+                x="24"
+                y="1028.3622"
+              />
+              <rect
+                style="fill: #9d0000; fill-opacity: 1; stroke: none"
+                id="rect3950-89-36"
+                width="6"
+                height="6"
+                x="24"
+                y="1034.3622"
+              />
+              <rect
+                style="fill: #ff0000; fill-opacity: 1; stroke: none"
+                id="rect3950-89-09"
+                width="6"
+                height="6"
+                x="30"
+                y="1034.3622"
+              />
+              <rect
+                style="fill: #ff0000; fill-opacity: 1; stroke: none"
+                id="rect3950-89-50"
+                width="6"
+                height="6"
+                x="30"
+                y="1028.3622"
+              />
+              <rect
+                style="fill: #ff0000; fill-opacity: 1; stroke: none"
+                id="rect3950-89-27"
+                width="6"
+                height="6"
+                x="24"
+                y="1022.3622"
+              />
+              <rect
+                style="fill: #ff0000; fill-opacity: 1; stroke: none"
+                id="rect3950-89-505"
+                width="6"
+                height="6"
+                x="30"
+                y="1022.3622"
+              />
+              <rect
+                style="fill: #ff0000; fill-opacity: 1; stroke: none"
+                id="rect3950-89-24"
+                width="6"
+                height="6"
+                x="30"
+                y="1016.3622"
+              />
+              <rect
+                style="fill: #ff0000; fill-opacity: 1; stroke: none"
+                id="rect3950-89-6"
+                width="6"
+                height="6"
+                x="24"
+                y="1016.3622"
+              />
+              <rect
+                style="fill: #ff0000; fill-opacity: 1; stroke: none"
+                id="rect3950-89-12"
+                width="6"
+                height="6"
+                x="24"
+                y="1010.3622"
+              />
+              <rect
+                style="fill: #ff0000; fill-opacity: 1; stroke: none"
+                id="rect3950-89-65"
+                width="6"
+                height="6"
+                x="30"
+                y="1010.3622"
+              />
+              <rect
+                style="fill: #ff0000; fill-opacity: 1; stroke: none"
+                id="rect3950-89-9"
+                width="6"
+                height="6"
+                x="36"
+                y="1016.3622"
+              />
+              <rect
+                style="fill: #ff0000; fill-opacity: 1; stroke: none"
+                id="rect3950-89-21"
+                width="6"
+                height="6"
+                x="42"
+                y="1022.3622"
+              />
+              <rect
+                style="fill: #ff0000; fill-opacity: 1; stroke: none"
+                id="rect3950-89-39"
+                width="6"
+                height="6"
+                x="36"
+                y="1022.3622"
+              />
+              <rect
+                style="fill: #ff0000; fill-opacity: 1; stroke: none"
+                id="rect3950-89-26"
+                width="6"
+                height="6"
+                x="36"
+                y="1028.3622"
+              />
+              <rect
+                style="fill: #ff0000; fill-opacity: 1; stroke: none"
+                id="rect3950-89-95"
+                width="6"
+                height="6"
+                x="42"
+                y="1016.3622"
+              />
+              <rect
+                style="fill: #ff5757; fill-opacity: 1; stroke: none"
+                id="rect3950-89-86"
+                width="6"
+                height="6"
+                x="48"
+                y="1016.3622"
+              />
+              <rect
+                style="fill: #ff0000; fill-opacity: 1; stroke: none"
+                id="rect3950-89-19"
+                width="6"
+                height="6"
+                x="36"
+                y="1010.3622"
+              />
+              <rect
+                style="fill: #ff0000; fill-opacity: 1; stroke: none"
+                id="rect3950-89-99"
+                width="6"
+                height="6"
+                x="42"
+                y="1010.3622"
+              />
+              <rect
+                style="fill: #ff5757; fill-opacity: 1; stroke: none"
+                id="rect3950-89-90"
+                width="6"
+                height="6"
+                x="48"
+                y="1010.3622"
+              />
+              <rect
+                style="fill: #ff5757; fill-opacity: 1; stroke: none"
+                id="rect3950-89-41"
+                width="6"
+                height="6"
+                x="48"
+                y="1004.3622"
+              />
+              <rect
+                style="fill: #ff5757; fill-opacity: 1; stroke: none"
+                id="rect3950-89-33"
+                width="6"
+                height="6"
+                x="42"
+                y="1004.3622"
+              />
+              <rect
+                style="fill: #ff5757; fill-opacity: 1; stroke: none"
+                id="rect3950-89-63"
+                width="6"
+                height="6"
+                x="36"
+                y="1004.3622"
+              />
+            </g></svg
+        ></h1>
+      </div>
+    </header>
+    <!-- -------------------------------------------------------------------------------------- -->
+    <div class="sticky-icon">
+      <img
+        src="https://i.pinimg.com/736x/e6/5b/59/e65b5935e2fc05994ee446a083542570.jpg"
+        alt="Chico Lachowski"
+      />
+    </div>
+    <div class="container">
+      <!-- ---------------------------------------------------------------------------------- -->
+      <div class="box">
+        <img
+          class="imgcards"
+          src="https://i.pinimg.com/564x/41/b1/b6/41b1b6d3bf3bc7067f3bbace3449f4b2.jpg"
+        />
+        <h3 class="boxh">Adriana Lima</h3>
+        <p class="p">
+          Adriana Lima born 12 June 1981 is a Brazilian model. She was a
+          Victoria's Secret Angel from 1999 to 2018. She was the longest-running
+          model and named "the most valuable Victoria's Secret Angel" in 2017.
+        </p>
+        <button class="button2">Read More</button>
+      </div>
+      <!-- ---------------------------------------------------------------------------------- -->
+      <div class="box">
+        <img
+          class="imgcards"
+          src="https://i.pinimg.com/736x/34/d9/5a/34d95acbba6b82aedb82e71bb2df3f07.jpg"
+        />
+        <h3 class="boxh">Chico Lachowski</h3>
+        <p class="p">
+          Francisco "Chico" Lachowski born 13 May 1991 is a Brazilian fashion
+          model. He has been featured in advertisements for a number of notable
+          brands, including Dior Homme, Balmain, L'Oréal, Armani Exchange.
+        </p>
+        <button class="button2">Read More</button>
+      </div>
+      <!-- ---------------------------------------------------------------------------------- -->
+      <div class="box">
+        <img
+          class="imgcards"
+          src="https://i.pinimg.com/564x/e5/b3/92/e5b392067b85e3f420ff1e97a0fb1b94.jpg"
+        />
+        <h3 class="boxh">Margot Robbie</h3>
+        <p class="p">
+          Margot Robbie born 2 July 1990 is an Australian actress. Time named
+          her one of the 100 most influential people in the world in 2017, and
+          Forbes named her one of the world's highest-paid actresses in 2019.
+        </p>
+        <button class="button2">Read More</button>
+      </div>
+    </div>
+
+    <!-- ---------------------------------------------------------------------------------- -->
+    <div class="container2">
+      <div class="bigbox">
+        <h2>WHAT IS LOOKSMAXXING ?</h2>
+        <p class="pb"
+          >"Looksmaxxing" is a term that originated from online communities,
+          particularly those focused on self-improvement and personal
+          aesthetics. It refers to the process of maximizing one's physical
+          appearance through various means to enhance perceived attractiveness.
+          Individuals who engage in looksmaxxing typically seek ways to improve
+          their appearance, boost self-confidence, and potentially enhance their
+          social and romantic prospects.</p
+        >
+        <p class="pb"
+          >The term is often associated with a combination of grooming,
+          skincare, fitness, fashion, and sometimes even cosmetic procedures.
+          It's important to note that looksmaxxing can vary greatly from person
+          to person, and the emphasis on certain aspects of physical appearance
+          may differ based on individual preferences and cultural influences.</p
+        >
+        <p class="pb"
+          >While looksmaxxing can involve legitimate self-improvement practices
+          such as maintaining a healthy lifestyle, exercising, and adopting good
+          grooming habits, it's essential to approach it with a balanced
+          mindset. The goal should be to feel more confident and comfortable in
+          one's own skin, rather than attempting to conform strictly to external
+          beauty standards.</p
+        >
+        <p class="pb"
+          >It's also crucial to recognize that attractiveness is subjective, and
+          the most meaningful changes often come from cultivating
+          self-acceptance and a positive mindset. Engaging in looksmaxxing
+          should be a personal choice driven by a desire for self-improvement
+          rather than external validation.</p
+        >
+
+        <h3>1. Skincare</h3>
+
+        <p class="pb"
+          >&#8226; Establish a consistent skincare routine to maintain healthy
+          and clear skin.</p
+        >
+        <p class="pb"
+          >&#8226; Use cleansers, moisturizers, and sunscreens suitable for your
+          skin type.</p
+        >
+        <p class="pb"
+          >&#8226; Address specific skin concerns like acne, pigmentation, or
+          wrinkles with targeted products.</p
+        >
+
+        <h3>2. Grooming:</h3>
+
+        <p class="pb"
+          >&#8226; Keep your hair well-groomed. This includes regular haircuts
+          and maintaining a hairstyle that suits your face shape.</p
+        >
+        <p class="pb"
+          >&#8226; Maintain facial hair by either keeping it well-groomed or
+          opting for a clean-shaven look, depending on personal preference.</p
+        >
+        <h3>3. Fashion:</h3>
+
+        <p class="pb"
+          >&#8226; Wear clothes that fit well and complement your body shape.</p
+        >
+        <p class="pb"
+          >&#8226; Develop a personal style that makes you feel confident.</p
+        >
+        <p class="pb"
+          >&#8226; Stay updated on fashion trends if that aligns with your
+          interests.</p
+        >
+
+        <h3>4. Fitness:</h3>
+
+        <p class="pb"
+          >&#8226; Engage in regular physical exercise to stay fit and
+          healthy.</p
+        >
+        <p class="pb"
+          >&#8226; Tailor your workouts to your fitness goals, whether it's
+          building muscle, losing weight, or improving endurance.</p
+        >
+
+        <h3>5. Diet:</h3>
+        <p class="pb">
+          &#8226; Maintain a balanced and nutritious diet to support overall
+          health.</p
+        >
+        <p class="pb"
+          >&#8226; Stay hydrated, and consider including foods that promote
+          healthy skin and hair.</p
+        >
+
+        <h3>6. Posture:</h3>
+        <p class="pb"
+          >&#8226; Pay attention to your posture. Stand and sit up straight to
+          convey confidence and improve your overall appearance.</p
+        >
+
+        <h3>7. Confidence and Personality:</h3>
+        <p class="pb"
+          >&#8226; Cultivate confidence by focusing on your strengths and
+          acknowledging your achievements.</p
+        >
+        <p class="pb"
+          >&#8226; Develop good communication skills and a positive attitude.</p
+        >
+
+        <h3>8. Mental Well-being:</h3>
+
+        <p class="pb">
+          &#8226; Take care of your mental health. Practice stress-reducing
+          activities, such as meditation or mindfulness.</p
+        >
+        <p class="pb"
+          >&#8226; A positive mindset can significantly impact how you perceive
+          and present yourself.</p
+        >
+
+        <p class="pb"
+          >Remember that looksmaxxing should be about enhancing your own
+          well-being and self-confidence rather than conforming to societal
+          standards. Focus on the aspects that make you feel good about
+          yourself, and don't forget that inner beauty and self-acceptance are
+          crucial components of overall attractiveness. If you have specific
+          concerns, consider consulting with professionals in areas such as
+          skincare, fitness, or fashion for personalized advice.</p
+        >
+      </div>
+      <div class="bigbox bigbox2">
+        <h2 class="mogh2">WHO IS YOUR FAV MOGGER?</h2>
+        <div class="imgcontainer">
+          <img
+            class="imgmog"
+            src="https://i.pinimg.com/564x/85/aa/fe/85aafe8de54ebb2c53bf5731effaa0a8.jpg"
+          />
+          <img
+            class="imgmog"
+            src="https://i.pinimg.com/564x/0a/80/48/0a8048c206f1def2dc5461710565349d.jpg"
+          />
+          <img
+            class="imgmog"
+            src="https://i.pinimg.com/236x/36/fc/9a/36fc9ac67f3893063af3be6b646cc24b.jpg"
+          />
+          <img
+            class="imgmog imgmog2"
+            src="https://i.pinimg.com/236x/49/71/7e/49717e3a7d544ae3f82bf6fab562f4e3.jpg"
+          />
+          <img
+            class="imgmog imgmog2"
+            src="https://i.pinimg.com/236x/d9/fd/b2/d9fdb2fbecd6eff5778541fb62dd735d.jpg"
+          />
+          <img
+            class="imgmog imgmog2"
+            src="https://i.pinimg.com/564x/18/f9/21/18f921d1ce1ca7681f675acce0fa22e5.jpg"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- ---------------------------------------------------------------------------------- -->
+    <footer>&copy; 2024 CYBRSIMP | Cost an arm and a leg </footer>
+  </body>
+</html>
